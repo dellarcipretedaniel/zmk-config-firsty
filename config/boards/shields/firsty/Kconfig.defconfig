@@ -1,0 +1,18 @@
+
+if SHIELD_firsty_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Firsty"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_FIRSTY_LEFT || SHIELD_FIRSTY_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
+
