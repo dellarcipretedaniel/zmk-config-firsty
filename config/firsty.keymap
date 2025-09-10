@@ -14,23 +14,13 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer_3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
         default_es {
             bindings = <
 &kp ESC    &kp ES_N1  &kp ES_N2  &kp ES_N3  &kp ES_N4  &kp ES_N5                                             &kp ES_N6  &kp ES_N7  &kp ES_N8     &kp ES_N9   &kp ES_N0       &kp ES_MINUS
 &kp TAB    &kp ES_Q   &kp ES_W   &kp ES_E   &kp ES_R   &kp ES_T                                              &kp Y      &kp U      &kp I         &kp O       &kp P           &kp ES_ACUTE
 &kp LCTRL  &kp A      &kp S      &kp D      &kp F      &kp G                                                 &kp H      &kp J      &kp K         &kp L       &kp ES_N_TILDE  &kp ES_APOSTROPHE
 &kp LSHFT  &kp Z      &kp X      &kp C      &kp V      &kp B      &kp ES_LEFT_BRACKET  &kp ES_RIGHT_BRACKET  &kp N      &kp M      &kp ES_COMMA  &kp ES_DOT  &kp ES_SLASH    &kp RSHFT
-                                 &kp LALT   &kp LGUI   &mo 3      &kp ES_SPACE         &kp RET               &mo 4      &kp BSPC   &kp RGUI
+                                 &kp LALT   &kp LGUI   &mo 2      &kp ES_SPACE         &kp RET               &mo 3      &kp BSPC   &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -49,7 +39,7 @@
 &kp TAB    &kp Q   &kp W   &kp E     &kp R     &kp T                        &kp Y   &kp U     &kp I             &kp O           &kp P           &kp GRAVE
 &kp LCTRL  &kp A   &kp S   &kp D     &kp F     &kp G                        &kp H   &kp J     &kp K             &kp L           &kp ES_N_TILDE  &kp SQT
 &kp LSHFT  &kp Z   &kp X   &kp C     &kp V     &kp B   &kp LBKT   &kp RBKT  &kp N   &kp M     &kp LS(ES_COMMA)  &kp LS(ES_DOT)  &kp FSLH        &kp RSHFT
-                           &kp LALT  &kp LGUI  &mo 3   &kp SPACE  &kp RET   &mo 4   &kp BSPC  &kp RGUI
+                           &kp LALT  &kp LGUI  &mo 2   &kp SPACE  &kp RET   &mo 3   &kp BSPC  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
